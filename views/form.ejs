@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <style>
+    #upload{
+      width:400px;
+      height:200px;
+      border:1px solid blue;
+      margin:auto;
+      margin-top:100px;
+      background-color:  #581845 ;
+    }
+    .title{
+      width:90%;
+      height:30px;
+      border-radius: 1px;
+      margin-top:30px;
+      margin-left:20px;
+      text-align:center;
+    }
+    .filedata{
+      width:90%;
+      height:30px;
+      margin-top:30px;
+      margin-left:20px;
+      border-radius: 1px;
+    }
+    .button{
+      width:40%;
+      height:40px;
+      margin-left:20px;
+      margin-top:30px;
+      background-color: green;
+      font-size: medium;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+<form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
+  <div id="upload">
+    <input type="text" name="name" placeholder="enter the title" class="title"/><br>
+    <input type="file" name="file" class="filedata" /><br>
+    <input type="submit" value="Upload a file" class="button"/>
+  </div>
+ </form>
+
+</body>
+</html>

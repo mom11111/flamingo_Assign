@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>all images</title>
+    <style>
+        #head{
+            width:600px;
+            height:auto;
+            background-color: #581845;
+            margin-top:100px;
+            margin-left:350px;
+            text-align:center;
+            color:white;
+        }
+        #imagesId{
+            width:90%;
+            margin-top:30px;
+            margin-left:30px;
+            border:1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <h1>All images</h1>
+<% for (i = res.length - 1; i >= 0; i--) { %>
+    <div id="imagesId">
+<h2>ImageId:<strong><%=res[i]._id%></strong></h1>
+
+<h2 id="content">ImageName:<%=res[i].imageName%></h2>
+    </div>
+  
+<%}%>
+</div>
+
+
+
+    </body>
+    </html>
